@@ -8,5 +8,5 @@
 本部分内容参考以下人员资料 
 - B站UP主 [虹咲芯片设计同好会](https://space.bilibili.com/4253239) 
 - [lizhirui](https://github.com/lizhirui/) 翻译的 AXI 总线总结
-- [keyonhome](github.com/keyonhome) 编写的 AXI4_LiteIP
+- [keyonhome](https://github.com/keyonhome) 编写的 AXI4_LiteIP
 
