@@ -426,15 +426,15 @@ AXI协议要求各个通道间必须保持如下关系：
 <summary>详情</summary>
 
 * 主设备在使能 AWVALID 或 WVALID 后才能等待从设备使能 AWREADY 或 WREADY 。
-  * 从设备在使能 AWREADY 前可以等待 AWVALID 或 WVALID 有效。
-  * 从设备在 AWVALID 或 WVALID 有效前可以先使能 AWREADY。
-  * 从设备可以在使能 WREADY 前等待 AWVALID 与 WVALID 有效。
-  * 从设备在 AWVALID 或 WVALID有效前可以先使能 WREADY。
-  * `从设备必须等待 WVALID 与 WREADY都有效后才能使能 BVALID`。
-  * 从设备必须等待 WLAST 有效后才能使能 BVALID ，因为写响应必须发生在一次写事务中的最后一次数据传输后。
-  * 从设备必须在使能 BVALID 后才能等待主设备使能 BREADY。
-  * 主设备可以在使能 BREADY 前等待 BVALID。
-  * 主设备可以在 BVALID 有效前使能 BREADY。
+* 从设备在使能 AWREADY 前可以等待 AWVALID 或 WVALID 有效。
+* 从设备在 AWVALID 或 WVALID 有效前可以先使能 AWREADY。
+* 从设备可以在使能 WREADY 前等待 AWVALID 与 WVALID 有效。
+* 从设备在 AWVALID 或 WVALID有效前可以先使能 WREADY。
+* `从设备必须等待 WVALID 与 WREADY都有效后才能使能 BVALID`。
+* 从设备必须等待 WLAST 有效后才能使能 BVALID ，因为写响应必须发生在一次写事务中的最后一次数据传输后。
+* 从设备必须在使能 BVALID 后才能等待主设备使能 BREADY。
+* 主设备可以在使能 BREADY 前等待 BVALID。
+* 主设备可以在 BVALID 有效前使能 BREADY。
 
 依赖关系图如下：
 

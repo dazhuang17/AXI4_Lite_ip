@@ -193,6 +193,8 @@ module axi_lite_controller
         else begin
             if (axi_wait_for_read) begin
                 if (saxi_rready) begin
+                    // address first
+                    // wait for host receive
                     axi_wait_for_read <= 1'b0;
                     saxi_rdata        <= axi_data_to_read;
                     saxi_rvalid       <= 1'b1;
@@ -201,10 +203,12 @@ module axi_lite_controller
             end
             else begin
                 if (axi_need_read & saxi_rready) begin
+                    // address and receive together
                     saxi_rdata  <= axi_data_to_read;
                     saxi_rvalid <= 1'b1;
                 end
                 else if (axi_need_read) begin
+                    // address first, host no receive
                     axi_wait_for_read <= 1'b1;
                     saxi_rvalid       <= 1'b0;
                 end
