@@ -1,9 +1,10 @@
 # AXI4_Lite_ip
 
 ## 本站链接
-- [AXI4_Lite 理论](./AXI4_Lite_theory/readme.md) ，对 AXI4 协议原本进行一定的翻译和分析
-- [代码v1.0](./code/axi_lite_controller_v1.0.md) ，分析官方的从机 axi-slave 代码
-- [代码v2.0](./code/axi_lite_controller_v2.0.md) ，仅写了从机的 axi-slave ，对 v1.0 部分功能进行补充
+- [AXI4_Lite 理论](./AXI4_Lite_theory/readme.md) ，对 AXI4 协议原本进行一定的翻译和分析。
+- [代码v1.0](./code/axi_lite_controller_v1.0.md) ，分析官方的从机 axi-slave 代码。
+- [代码v2.0](./code/axi_lite_controller_v2.0.md) ，仅写了从机的 axi-slave ，结合官方提供的时序，
+对 v1.0 部分功能进行补充。
 
 ## 0 参考资料
 本部分内容参考以下人员资料 
